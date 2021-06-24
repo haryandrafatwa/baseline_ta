@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/container_scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_big_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_editor_info"
+            style="@style/image_all_editor_view"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:text="@string/text_tanggal_bimbingan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/act_mhs_bimbingan_textview_tanggal"
+            android:textSize="@dimen/text_size_title_small_18sp"
+            android:paddingTop="@dimen/dimen_medium_8dp"
+            android:paddingBottom="@dimen/dimen_medium_8dp"
+            android:textColor="@color/colorTextBlack"
+            android:drawableEnd="@drawable/ic_date"
+            android:drawablePadding="@dimen/dimen_big_16dp"
+            android:layout_marginBottom="@dimen/dimen_medium_8dp"
+            android:text="@string/dummy_tanggal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_medium_8dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/act_mhs_nama_1"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/dummy_anggota_kelompok_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <Spinner
+            android:entries="@array/array_kehadiran_bimbingan"
+            android:layout_marginBottom="@dimen/dimen_medium_8dp"
+            android:layout_marginStart="-8dp"
+            android:layout_marginEnd="-8dp"
+            android:id="@+id/spinner_kehadiran_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+        <LinearLayout
+            android:id="@+id/container_mahasiswa_2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/act_mhs_nama_2"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/dummy_anggota_kelompok_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+
+            <Spinner
+                android:entries="@array/array_kehadiran_bimbingan"
+                android:layout_marginBottom="@dimen/dimen_medium_8dp"
+                android:layout_marginStart="-8dp"
+                android:layout_marginEnd="-8dp"
+                android:id="@+id/spinner_kehadiran_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:text="@string/text_review_bimbingan"
+            android:id="@+id/tv_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/act_mhs_info_edittext_konten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="@dimen/dimen_medium_8dp"
+            android:layout_marginBottom="@dimen/dimen_medium_8dp"
+            android:hint="@string/hint_review_bimbingan"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/act_mhs_info_button_simpan"
+            android:text="@string/button_click_tambah_bimbingan"
+            style="@style/button_all_primary"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

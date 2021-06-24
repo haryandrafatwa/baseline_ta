@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            style="@style/profile_all_header"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/act_mhs_profil_foto"
+            style="@style/profile_all_photo"/>
+
+        <TextView
+            android:id="@+id/act_mhs_profil_nama"
+            android:layout_below="@+id/act_mhs_profil_foto"
+            android:text="@string/dummy_mahasiswa_nama"
+            style="@style/profile_all_header_name"/>
+
+        <LinearLayout
+            style="@style/profile_all_container_body">
+
+            <LinearLayout
+                style="@style/profile_all_container_textview">
+
+                <TextView
+                    android:text="@string/text_profil_detail_nim"
+                    style="@style/profile_all_textview_subtitle"/>
+
+                <TextView
+                    android:id="@+id/act_mhs_profil_nim"
+                    tools:text="@string/dummy_anggota_nim_2"
+                    style="@style/profile_all_textview_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginBottom="@dimen/dimen_big_super_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_view_line"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                style="@style/profile_all_container_textview">
+
+                <TextView
+                    android:text="@string/text_angkatan"
+                    style="@style/profile_all_textview_subtitle"/>
+
+                <TextView
+                    android:id="@+id/act_mhs_profil_angkatan"
+                    tools:text="@string/dummy_no_telp"
+                    style="@style/profile_all_textview_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginBottom="@dimen/dimen_big_super_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_view_line"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                style="@style/profile_all_container_textview">
+
+                <TextView
+                    android:text="@string/text_profil_detail_email"
+                    style="@style/profile_all_textview_subtitle"/>
+
+                <TextView
+                    android:id="@+id/act_mhs_profil_email"
+                    tools:text="@string/dummy_kelas"
+                    style="@style/profile_all_textview_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginBottom="@dimen/dimen_big_super_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_view_line"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                style="@style/profile_all_container_textview">
+
+                <TextView
+                    android:text="@string/text_profil_detail_notelp"
+                    style="@style/profile_all_textview_subtitle"/>
+
+                <TextView
+                    android:id="@+id/act_mhs_profil_kontak"
+                    tools:text="@string/dummy_no_telp"
+                    style="@style/profile_all_textview_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_view_line"
+                android:background="@color/colorBackground" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/content_all_copyright_institute"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/dimen_medium_8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="@dimen/dimen_medium_8dp"
+            android:paddingBottom="@dimen/dimen_medium_8dp"
+            android:paddingStart="@dimen/dimen_big_16dp"
+            android:paddingEnd="@dimen/dimen_big_16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_tanggal_bimbingan"/>
+
+            <View
+                style="@style/view_all_line_horizontal"/>
+
+            <TextView
+                android:id="@+id/act_dsn_mhs_bimbingan_textview_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/dummy_tanggal"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/dimen_medium_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="@dimen/dimen_medium_8dp"
+            android:paddingBottom="@dimen/dimen_medium_8dp"
+            android:paddingStart="@dimen/dimen_big_16dp"
+            android:paddingEnd="@dimen/dimen_big_16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_bimbingan_kehadiran"/>
+
+            <View
+                style="@style/view_all_line_horizontal"/>
+
+            <TextView
+                android:id="@+id/act_dsn_mhs_bimbingan_textview_kehadiran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextBlack"
+                tools:text="@string/dummy"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_medium_8dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="@dimen/dimen_medium_8dp"
+            android:paddingBottom="@dimen/dimen_medium_8dp"
+            android:paddingStart="@dimen/dimen_big_16dp"
+            android:paddingEnd="@dimen/dimen_big_16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_review_bimbingan"/>
+
+            <View
+                style="@style/view_all_line_horizontal"/>
+
+            <TextView
+                android:id="@+id/act_dsn_mhs_bimbingan_textview_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextBlack"
+                android:text="@string/dummyLong" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
